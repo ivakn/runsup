@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "456573389421",
+    "firebase_url": "https://runsup-ce425.firebaseio.com",
+    "project_id": "runsup-ce425",
+    "storage_bucket": "runsup-ce425.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456573389421:android:9fc737962479b7c5",
+        "android_client_info": {
+          "package_name": "si.uni_lj.fri.pbd2019.runsup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456573389421-a7ucqncqlvqpk5ipucv73sgjctjf3tcb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "si.uni_lj.fri.pbd2019.runsup",
+            "certificate_hash": "37ab522d3ef75aef4756ada903a15533f09ebeea"
+          }
+        },
+        {
+          "client_id": "456573389421-2863ivhvh8r0fjloebr88og9lmots4fa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWSjkKNeTv3OwihttEVviCsvQeh0g8B3k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456573389421-2863ivhvh8r0fjloebr88og9lmots4fa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

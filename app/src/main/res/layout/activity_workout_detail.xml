@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintlayout_workoutdetail_content"
+    android:layout_margin="8dp"
+    tools:context=".WorkoutDetailActivity">
+
+
+
+    <View
+        android:id="@+id/secondDevider"
+        android:layout_width="wrap_content"
+        android:layout_height="199dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/container"
+        app:layout_constraintBottom_toTopOf="@+id/thirdDevider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstDevider" />
+
+    <View
+        android:id="@+id/firstDevider"
+        android:layout_width="wrap_content"
+        android:layout_height="183dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_workoutdetail_map" />
+
+    <View
+        android:id="@+id/thirdDevider"
+        android:layout_width="wrap_content"
+        android:layout_height="219dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/container"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondDevider" />
+
+
+    <TextView
+        android:id="@+id/textview_workoutdetail_workouttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/workoutdetail_workoutname"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/firstDevider" />
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/fragment_workoutdetail_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="158dp"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.0"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        tools:context=".MapsActivity" />
+
+    <TextView
+        android:id="@+id/textview_workoutdetail_labelsport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Sport"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_workoutdetail_workouttitle" />
+
+    <TextView
+        android:id="@+id/textview_workoutdetail_sportactivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Running"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_workoutdetail_labelsport" />
+
+    <TextView
+        android:id="@+id/textview_workoutdetail_activitydate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="0:00"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_workoutdetail_sportactivity" />
+
+    <TextView
+        android:id="@+id/textview_workoutdetail_valuedistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_workoutdetail_labeldistance" />
+
+
+    <TextView
+        android:id="@+id/textview_workoutdetail_labelsummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Summary"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/secondDevider" />
+
+    <TextView
+        android:id="@+id/textview_workoutdetail_labelsocialshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Social Share"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/thirdDevider" />
+
+    <TextView
+        android:id="@+id/textview_workoutdetail_labelduration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Duration"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_workoutdetail_labelsummary" />
+
+    <TextView
+        android:id="@+id/textview_workoutdetail_labeldistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Distance"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_workoutdetail_valueduration" />
+
+    <TextView
+        android:id="@+id/textview_workoutdetail_valuecalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toEndOf="@+id/textview_workoutdetail_valueduration"
+        app:layout_constraintTop_toBottomOf="@+id/textview_workoutdetail_labelcalories" />
+
+    <Button
+        android:id="@+id/button_workoutdetail_twittershare"
+        android:layout_width="140px"
+        android:layout_height="150px"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/twitter"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdDevider"
+        app:layout_constraintEnd_toStartOf="@+id/button_workoutdetail_emailshare"
+        app:layout_constraintStart_toEndOf="@+id/button_workoutdetail_gplusshare"
+        app:layout_constraintTop_toBottomOf="@+id/share_message" />
+
+    <Button
+        android:id="@+id/button_workoutdetail_gplusshare"
+        android:layout_width="140px"
+        android:layout_height="150px"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/googleplusbox"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdDevider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/share_message" />
+
+    <Button
+        android:id="@+id/button_workoutdetail_emailshare"
+        android:layout_width="140px"
+        android:layout_height="150px"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/email"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdDevider"
+        app:layout_constraintEnd_toStartOf="@+id/button_workoutdetail_fbsharebtn"
+        app:layout_constraintTop_toBottomOf="@+id/share_message" />
+
+    <TextView
+        android:id="@+id/textview_workoutdetail_labelcalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Calories"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textview_workoutdetail_labelduration"
+        app:layout_constraintTop_toBottomOf="@+id/textview_workoutdetail_labelsummary" />
+
+    <TextView
+        android:id="@+id/textview_workoutdetail_valueduration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_workoutdetail_labelduration" />
+
+    <TextView
+        android:id="@+id/textview_workoutdetail_labelavgpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Avg.Pace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textview_workoutdetail_labeldistance"
+        app:layout_constraintTop_toBottomOf="@+id/textview_workoutdetail_valuecalories" />
+
+    <TextView
+        android:id="@+id/textview_workoutdetail_valueavgpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.55"
+        app:layout_constraintStart_toEndOf="@+id/textview_workoutdetail_valuedistance"
+        app:layout_constraintTop_toBottomOf="@+id/textview_workoutdetail_labelavgpace" />
+
+
+    <Button
+        android:id="@+id/button_workoutdetail_fbsharebtn"
+        android:layout_width="140px"
+        android:layout_height="150px"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/facebook"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdDevider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toEndOf="@+id/button_workoutdetail_gplusshare"
+        app:layout_constraintTop_toBottomOf="@+id/share_message" />
+
+    <EditText
+        android:id="@+id/share_message"
+        android:background="@android:color/white"
+        android:layout_width="0dp"
+        android:layout_height="200px"
+        android:scrollbars="vertical"
+        android:gravity="top|left"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/thirdDevider"
+        app:layout_constraintTop_toBottomOf="@+id/textview_workoutdetail_labelsocialshare" />
+</android.support.constraint.ConstraintLayout>
+</ScrollView>
